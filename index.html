@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>University Fee Receipt Editor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Fee Receipt Generator</h2>
+
+    <form id="receiptForm">
+      <label>University Name:</label>
+      <input type="text" id="university" value="University of Delhi, Delhi-110007" />
+
+      <label>Student Name:</label>
+      <input type="text" id="studentName" value="John Doe" />
+
+      <label>Enrollment No:</label>
+      <input type="text" id="enroll" value="2025SOL1234" />
+
+      <label>Course:</label>
+      <input type="text" id="course" value="B.A. (Hons.) Political Science" />
+
+      <label>Year:</label>
+      <input type="text" id="year" value="2025" />
+    </form>
+
+    <button id="generateBtn">Preview & Download</button>
+
+    <div class="preview">
+      <canvas id="receiptCanvas" width="700" height="400"></canvas>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
